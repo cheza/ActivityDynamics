@@ -27,8 +27,14 @@ Once all dependencies are installed we can:
   <ul>
     <li>The process will fork 10 additional processes to speed up the calculation of activity dynamics.</li>
     <li>There is a lot of colorful debug output to watch :).</li>
+    <li>The message "-> INFO: Could not store empirical activities!" occurs for all synthetic datasets</li>
   </ul>
 <li>Wait until calc_dynamics_synthetic.py has finished</li>
 <li>Browse to 'results/graphs/" and look at the generated Karate_* graphs</li>
 <li>Browse to 'results/plots/weights_over_time/Karate/' and look at the Karate_ratio_*.pdf files.</li>
 </ul>
+
+# FYI
+
+The data_preparation folder contains all the python scripts necessary to process instances of the StackExchange dataset and to some
+extent also Semantic MediaWiki instances. Also, due to the dependency on graph-tool, the framework only works on Linux and Mac OSX environments.
